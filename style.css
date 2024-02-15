@@ -1,0 +1,25 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.grid-container {
+ border: 2px solid red;
+ display: grid;
+ /* column-gap: 10px; */
+ /* row-gap: 10px; */
+ gap: 10px 15px;
+ grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.grid-item {
+ border: 2px solid olive;
+ height: 200px;
+ /* width: 200px; */
+}
+
+.grid-item:first-child {
+ grid-column: 1/3;
+}
